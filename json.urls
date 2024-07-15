@@ -1,1 +1,42 @@
+http://localhost:8000/api/signup/
+http://localhost:8000/api/login/
+{
+  "endpoints": [
+    {
+      "method": "POST",
+      "url": "localhost:8000/api/signup/",
+      "description": "Endpoint for user registration/signup"
+    },
+    {
+      "method": "POST",
+      "url": "localhost:8000/api/login/",
+      "description": "Endpoint for user login/authentication"
+    },
+    {
+      "method": "GET",
+      "url": "localhost:8000/api/search/",
+      "description": "Endpoint to search users by keyword (authenticated)"
+    },
+    {
+      "method": "POST",
+      "url": "localhost:8000/api/send-request/{to_user_id}/",
+      "description": "Endpoint to send a friend request to a user (authenticated)"
+    },
+    {
+      "method": "POST",
+      "url": "localhost:8000/api/handle-request/{request_id}/{action}/",
+      "description": "Endpoint to handle a friend request (accept/reject) (authenticated)"
+    },
+    {
+      "method": "GET",
+      "url": "localhost:8000/api/friends/",
+      "description": "Endpoint to list friends (authenticated)"
+    },
+    {
+      "method": "GET",
+      "url": "localhost:8000/api/pending-requests/",
+      "description": "Endpoint to list pending friend requests (authenticated)"
+    }
+  ]
+}
 
